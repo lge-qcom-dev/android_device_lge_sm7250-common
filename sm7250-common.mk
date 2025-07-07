@@ -205,6 +205,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayCommon \
     FrameworksResOverlayCommon \
+    SystemUIOverlayCommon \
     WifiOverlayCommon
 
 # Partitions
