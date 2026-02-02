@@ -171,16 +171,6 @@
         <fqname>@1.1::ILgDataVendorRil/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lge.hardware.powerhint.rescontrol</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IResControl</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IResControl/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.lge.hardware.radio</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
