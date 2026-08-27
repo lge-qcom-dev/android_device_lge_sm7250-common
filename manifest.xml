@@ -60,16 +60,6 @@
         <fqname>@4.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.memtrack</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMemtrack</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IMemtrack/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
         <version>1.2</version>
@@ -154,16 +144,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.1::IUsbGadget/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.vr</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IVr</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IVr/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
