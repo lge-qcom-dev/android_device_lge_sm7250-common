@@ -311,4 +311,11 @@
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
+    <!-- The touch controller supports waking the device after a double tap. -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Allow UDFPS authentication while the display is off or in AOD. -->
+    <bool name="config_screen_off_udfps_enabled">true</bool>
+    <bool name="config_screen_off_udfps_default_on">false</bool>
+
 </resources>
