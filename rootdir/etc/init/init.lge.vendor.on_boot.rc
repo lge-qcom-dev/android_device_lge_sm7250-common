@@ -65,6 +65,8 @@ on boot
 	chmod 664 /sys/devices/virtual/input/lge_touch/reg_ctrl
 	chown system system /sys/devices/virtual/input/lge_touch/touch_common_control
 	chmod 664 /sys/devices/virtual/input/lge_touch/touch_common_control
+	chown system system /sys/devices/virtual/input/lge_touch/tap2wake
+	chmod 664 /sys/devices/virtual/input/lge_touch/tap2wake
 # END touch_driver
 
 # START sub touch_driver
