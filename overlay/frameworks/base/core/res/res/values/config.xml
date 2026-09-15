@@ -146,6 +146,22 @@
         <item>255</item>
     </integer-array>
 
+    <!-- Optional IPsec algorithms enabled by this device, defaulting to empty. OEMs can override
+         it by providing a list of algorithm names in an overlay config.xml file.
+
+         As Android releases new versions, more algorithms are becoming mandatory. Mandatory
+         algorithms will be automatically enabled on the device. Optional algorithms need
+         to be explicitly declared in this resource to be enabled.
+             * SDK level 28 makes the following algorithms mandatory : "cbc(aes)", "hmac(md5)",
+               "hmac(sha1)", "hmac(sha256)", "hmac(sha384)", "hmac(sha512)", "rfc4106(gcm(aes))"
+             * SDK level 31 makes the following algorithms mandatory : "rfc3686(ctr(aes))",
+               "xcbc(aes)", "cmac(aes)", "rfc7539esp(chacha20,poly1305)"
+     -->
+    <string-array name="config_optionalIpSecAlgorithms" translatable="false">
+        <item>xcbc(aes)</item>
+        <item>rfc3686(ctr(aes))</item>
+    </string-array>
+
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
@@ -255,20 +271,6 @@
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
-
-    <!-- Flag specifying whether VoLTE is available on device -->
-    <bool name="config_device_volte_available">true</bool>
-
-    <!-- Flag specifying whether VoLTE should be available for carrier: independent of
-         carrier provisioning. If false: hard disabled. If true: then depends on carrier
-         provisioning, availability etc -->
-    <bool name="config_carrier_volte_available">true</bool>
-
-    <!-- Flag specifying whether VT is available on device -->
-    <bool name="config_device_vt_available">true</bool>
-
-    <!-- Flag specifying whether WFC over IMS is available on device -->
-    <bool name="config_device_wfc_ims_available">true</bool>
 
     <!-- Config determines whether to update phone object when voice registration
          state changes. Voice radio tech change will always trigger an update of

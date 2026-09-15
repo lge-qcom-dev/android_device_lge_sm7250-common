@@ -154,6 +154,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
 
+# IMS
+$(call inherit-product, hardware/lineage/generic-ims/ims.mk)
+
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.hardware:$(TARGET_COPY_OUT_RAMDISK)/fstab.$(DEVICE_NAME)
