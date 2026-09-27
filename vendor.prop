@@ -1,7 +1,7 @@
 # Audio
 aaudio.hw_burst_min_usec=2000
-aaudio.mmap_exclusive_policy=2
-aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=0
+aaudio.mmap_policy=0
 audio.dolby.ds2.enabled=false
 audio.dolby.ds2.hardbypass=false
 audio.offload.24bit.enable=1
