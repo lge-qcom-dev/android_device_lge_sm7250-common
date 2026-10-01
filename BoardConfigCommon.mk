@@ -82,7 +82,7 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_OFFSET := 0x01000000
-TARGET_KERNEL_CONFIG := lineageos_caymanlm_defconfig
+TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig vendor/lge/lge-common.config
 TARGET_KERNEL_SOURCE := kernel/lge/sm7250
 
 # Media
