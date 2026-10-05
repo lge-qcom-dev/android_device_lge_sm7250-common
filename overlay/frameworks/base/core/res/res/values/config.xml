@@ -201,9 +201,6 @@
          states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
-    <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
-    <bool name="config_displayBlanksAfterDoze">true</bool>
-
     <!--  Maximum number of supported switchable users (excluding Guests & Demo users).
           Does not include profiles. See {@link UserManager#getMaxSwitchableUsers()} for details.
 
