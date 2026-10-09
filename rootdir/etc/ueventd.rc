@@ -419,3 +419,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # enable parallel_restorecon for reducing boot time
 parallel_restorecon enabled
+
+# Optional case permissions, installed with the LG Dual Screen HAL.
+import /vendor/etc/ueventd/dualscreen.rc
